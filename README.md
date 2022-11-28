@@ -7,13 +7,9 @@
 ##### También se incluye una [imagen del S.O.](https://github.com/mkilgore/protura/releases/tag/v0.9.1) para probar algunas funcionalidades que ofrece. A continuación se explicará como correrla utilizando _QEMU_. También se ofrece un [link alternativo](https://drive.google.com/drive/folders/116crwsfv_ZmLp64NzDg9n7Ybc_JJPS68) para obtener la imagen. 
 ##### Por último, se incluye un archivo _DOCKERFILE_ para construir una imagen de docker con las dependencias necesarias para compilar el proyecto. Por una cuestión de tiempo (no se logró terminar la compilación en 40 minutos), no se recomienda compilar el proyecto manualmente utilizando la imagen.
 ## Usar la imagen para compilar 
-1. Clonar el repositorio
+1. Clonar el S.O (puede tardar)
 ```
-git clone --recursive https://github.com/mkilgore/protura.git
-```
-o bien 
-```
-git clone --recursive https://github.com/JoseMenta/protura.git
+git clone https://github.com/JoseMenta/TP3_SO.git
 ```
 2. Ir al directorio del proyecto
 ```
@@ -23,7 +19,15 @@ cd TP3_SO
 ```
 docker build -t protura_test .
 ```
-3. Ir al directorio del S.O. (se debe clonar manualmente utilizando el link)
+4. Clonar el S.O.
+```
+git clone --recursive https://github.com/mkilgore/protura.git
+```
+o bien
+```
+git clone --recursive https://github.com/JoseMenta/protura.git
+```
+5. Ir al directorio del S.O. (clonado en el paso 1)
 ```
 cd protura
 ```
@@ -39,12 +43,13 @@ make full
 ###### Por cuestiones de tiempo y recursos, no fue posible verificar el funcionamiento de la imagen para compilar todo el proyecto
 ## Correr el SO
 ##### Para correr la imagen, se deben seguir los siguientes pasos
-1. Descargar la imagen desde el [link mencionado](https://github.com/mkilgore/protura/releases/tag/v0.9.1)
-2. Ubicarse en el directorio con la imagen
+1. Instalar _QEMU_ localmente (https://www.qemu.org/download/#source)
+2. Descargar la imagen desde el [link mencionado](https://github.com/mkilgore/protura/releases/tag/v0.9.1)
+3. Ubicarse en el directorio con la imagen
 ```
 cd TP3_SO
 ```
-3. Correr la imagen en _QEMU_ 
+4. Correr la imagen en _QEMU_ 
 ```
 qemu-system-x86_64 -hda disk.img -k en-us
 ```
