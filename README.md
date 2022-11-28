@@ -46,9 +46,6 @@ make full
 1. Instalar _QEMU_ localmente (https://www.qemu.org/download/#source)
 2. Descargar la imagen desde el [link mencionado](https://github.com/mkilgore/protura/releases/tag/v0.9.1) (disk.img)
 3. Ubicarse en el directorio con la imagen
-```
-cd TP3_SO
-```
 4. Correr la imagen en _QEMU_ 
 ```
 qemu-system-x86_64 -hda disk.img -k en-us
