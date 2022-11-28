@@ -7,7 +7,7 @@
 ##### También se incluye una [imagen del S.O.](https://github.com/mkilgore/protura/releases/tag/v0.9.1) para probar algunas funcionalidades que ofrece. A continuación se explicará como correrla utilizando _QEMU_. También se ofrece un [link alternativo](https://drive.google.com/drive/folders/116crwsfv_ZmLp64NzDg9n7Ybc_JJPS68) para obtener la imagen. 
 ##### Por último, se incluye un archivo _DOCKERFILE_ para construir una imagen de docker con las dependencias necesarias para compilar el proyecto. Por una cuestión de tiempo (no se logró terminar la compilación en 40 minutos), no se recomienda compilar el proyecto manualmente utilizando la imagen.
 ## Usar la imagen para compilar 
-1. Clonar el S.O (puede tardar)
+1. Clonar el proyecto
 ```
 git clone https://github.com/JoseMenta/TP3_SO.git
 ```
@@ -19,7 +19,7 @@ cd TP3_SO
 ```
 docker build -t protura_test .
 ```
-4. Clonar el S.O.
+4. Clonar el S.O. (puede tardar)
 ```
 git clone --recursive https://github.com/mkilgore/protura.git
 ```
