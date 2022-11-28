@@ -21,13 +21,13 @@ docker build -t protura_test .
 ```
 4. Clonar el S.O.
 ```
-git clone --recursive https://github.com/mkilgore/protura.git
+git clone https://github.com/mkilgore/protura.git
 ```
 o bien
 ```
-git clone --recursive https://github.com/JoseMenta/protura.git
+git clone https://github.com/JoseMenta/protura.git
 ```
-5. Ir al directorio del S.O. (clonado en el paso 1)
+5. Ir al directorio del S.O. 
 ```
 cd protura
 ```
@@ -35,7 +35,7 @@ cd protura
 ```
 docker run --rm -v ${PWD}:/root --privileged -ti protura_test
 ```
-5. Compilar el proyecto
+5. Compilar el proyecto (repetir en caso de error)
 ```
 cd root 
 make full
@@ -44,7 +44,7 @@ make full
 ## Correr el SO
 ##### Para correr la imagen, se deben seguir los siguientes pasos
 1. Instalar _QEMU_ localmente (https://www.qemu.org/download/#source)
-2. Descargar la imagen desde el [link mencionado](https://github.com/mkilgore/protura/releases/tag/v0.9.1)
+2. Descargar la imagen desde el [link mencionado](https://github.com/mkilgore/protura/releases/tag/v0.9.1) (disk.img)
 3. Ubicarse en el directorio con la imagen
 ```
 cd TP3_SO
